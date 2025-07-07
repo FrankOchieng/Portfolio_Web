@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frank Ochieng's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />  
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  </head>
+  <body>
+  <button id="toggleSidebar" class="btn sidebar-toggle"><i class="fas fa-bars"></i></button>
+
+  <aside id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="#about">_ About Me</a></li>
+      <li><a href="#job-roles">Job Roles</a></li>
+      <li><a href="#aspirations">Aspirations</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#contact">Contact _</a></li>
+    </ul>
+  </aside>
+
+    <header class="main-header">
+      <div class="header-left">
+        <h1>Frank Ochieng's Portfolio</h1>
+        <p id="typed-subtitle"></p>
+      </div>
+      <div class="header-actions">
+        <a href="../assets/Frank_Ochieng_CV.pdf" download class="btn"><i class="fas fa-file-download"></i> Download CV</a>
+        <a href="../assets/application-projects.zip" download class="btn"><i class="fas fa-download"></i> Download Projects</a>
+        <a href="https://github.com/FrankOchieng" target="_blank" class="btn"><img src="./images/github1.png" style="height: 20px;width: 20px;"> My GitHub</a>
+        <button id="darkToggle" class="btn"><i class="fas fa-moon"></i> Dark Mode</button>
+      </div>
+      <!--<nav class="top-navbar">
+        <ul>
+          <li><a href="#about">_ About Me</a></li>
+          <li><a href="#job-roles">Job Roles</a></li>
+          <li><a href="#aspirations">Aspirations</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#contact">Contact _</a></li>
+        </ul>
+      </nav> -->
+    </header>
+    <main>
+      <section id="about" class="card scroll-reveal">
+        <h2>About Me</h2>
+        <p>I am a passionate and dedicated individual with a strong interest in cybersecurity, software development, and API integration.</p>
+      </section>
+
+      <section id="job-roles" class="card scroll-reveal">
+        <h3>Job Roles</h3>
+        <ul>
+          <li>Pen Testing</li>
+          <li>Software Development</li>
+          <li>API Integration</li>
+        </ul>
+      </section>
+
+      <section id="aspirations" class="card scroll-reveal">
+        <h3>Job Role Aspirations</h3>
+        <ul>
+          <li>Cyber Security Engineer</li>
+          <li>Offensive Security Pen Tester</li>
+          <li>Network Administrator</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="card scroll-reveal">
+        <h3>Personal Projects</h3>
+        <ul>
+          <li>POS/PES Integration System <a href="https://github.com/YOUR_GITHUB_USERNAME/pos-pes-integration" class="project-link"><i class="fab fa-github"></i> View Code</a></li>
+          <li>Banking Security Microservice API <a href="https://github.com/YOUR_GITHUB_USERNAME/banking-security-api" class="project-link"><i class="fab fa-github"></i> View Code</a></li>
+          <li>Rest Online Admin API <a href="https://github.com/YOUR_GITHUB_USERNAME/rest-online-admin-api" class="project-link"><i class="fab fa-github"></i> View Code</a></li>
+        </ul>
+      </section>
+
+      <section id="skills" class="card scroll-reveal">
+        <h3>Skills</h3>
+        
+        <div class="skill"><span><img src="./images/python.png" style="height: 20px;width: 20px;">Python</span><div class="progress-bar"><div style="width: 70%;">70%</div></div></div>
+        <div class="skill"><span><img src="./images/api1.png" style="height: 20px;width: 20px;">Restful API Integration</span><div class="progress-bar"><div style="width: 60%;">60%</div></div></div>
+        <div class="skill"><span><img src="./images/cysec1.png" style="height: 20px;width: 20px;">Cyber Security Skills</span><div class="progress-bar"><div style="width: 55%;">55%</div></div></div>
+        <div class="skill"><span><img src="./images/java1.png" style="height: 20px;width: 20px;">Java</span><div class="progress-bar"><div style="width: 50%;">50%</div></div></div>
+        
+      </section>
+
+      <section id="testimonials" class="card scroll-reveal">
+        <h3>Testimonials</h3>
+        <div class="testimonial-slider">
+          <div class="testimonial">“Frank’s cybersecurity skills are top-tier!” — Tech Mentor</div>
+          <div class="testimonial">“Excellent software engineering work.” — Client A</div>
+          <div class="testimonial">“Always delivers on time with clean code.” — Dev Team Lead</div>
+        </div>
+      </section>
+
+      <section id="notes" class="card scroll-reveal">
+        <div class="notes-section">
+          <div class="notes-header">
+            <h3>Notes</h3>
+            <span id="arrow" class="rotated">&#9660;</span>
+          </div>
+          <div id="notesContent" class="collapsed">
+            <h4>Theoretical Computer Science</h4>
+            <ul>
+              <li>Foundations: automata, logic, computation models.</li>
+              <li>Core areas: algorithms, complexity, cryptography.</li>
+              <li>Supports AI, compiler design, cybersecurity.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="card scroll-reveal">
+        <h3>Contact Me</h3>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Send</button>
+          </form>
+        <div style="margin-top: 0.5cm;">
+          <a href="https://wa.me/254113559638?text=Hello%20can%20we%discuss%20some%20business." target="_blank" style="padding-right: 0.5cm;">
+            <img src="./images/wab.png" alt="WhatsApp" style="width:30px;height: 30px;"></a>
+          <a href="mailto:frankochieng101@gmail.com?subject=Portofolio%20inquiry&body=Dear%20Frank%0D%0ACan%20I%20get%20more%20details%20about%20your%20skills" style="padding-right: 0.5cm;">
+            <img src="./images/email1.png" alt="MAIL" style="height: 30px;width: 30px;">
+          </a>
+          <a href="tel:+254113559638" style="padding-right: 0.5cm;"><img src="./images/call1.png" alt="CALL" style="width: 30px;height: 30px;"></a>
+          <a href="sms:+254113559638?body=Hello%0d%0aCan%20I%20get%20more%20details%20about%20your%20portfolio%20from%20the%20web">
+            <img src="./images/sms2.png" alt="SMS" style="height: 30px;width: 30px;">
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Frank Ochieng. All rights reserved.
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

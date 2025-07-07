@@ -1,0 +1,242 @@
+
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: auto;
+  min-height: 100px;
+}
+body {
+  background: #f2f2f2 url('./images/quantImage7.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  padding-top: 140px;
+  color: #333;
+}
+.dark-mode {
+  background: #121212 !important;
+  color: #f0f0f0;
+}
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.main-header {
+  padding-bottom: 22.5%;
+  height: minS-content;
+  margin-left: 50px; /* same as sidebar width */
+  margin-right: 50px;
+  transition: margin-left 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007acc;
+  color: white;
+  padding: 20px 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /*1000*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.header-left h1 {
+  font-size: 2.2rem;
+}
+.header-left p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+.btn {
+  background-color: #fff;
+  color: #007acc;
+  border: 2px solid #007acc;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.btn:hover {
+  background: #007acc;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+.top-navbar {
+  background-color: #01b919f6;
+  color: white;
+  padding: 12px 0;
+  margin-top: 18px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+.top-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.top-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+}
+.top-navbar a:hover {
+  color: #ffe600;
+  text-shadow: 0 2px 8px #00000033;
+}
+.card {
+  background-color: rgba(255,255,255,0.97);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card h2, .card h3 {
+  margin-bottom: 12px;
+  color: #007acc;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+}
+.card ul {
+  list-style-type: square;
+  margin-left: 24px;
+}
+.skill {
+  margin-bottom: 10px;
+}
+.progress-bar {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.progress-bar div {
+  background: #007acc;
+  color: white;
+  text-align: right;
+  padding: 5px;
+  font-size: 0.9rem;
+  height: 24px;
+}
+.testimonial-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.testimonial {
+  background: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #007acc;
+  font-style: italic;
+}
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+footer {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 122, 204, 0.85);
+  padding: 18px 0 10px 0;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  display: none;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+}
+#scrollTopBtn:hover {
+  background-color: #005a99;
+}
+
+
+#notesContent.collapsed{
+  display: none;
+}
+#notesContent.expanded{
+  display: block;
+}
+#arrow{
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+#arroww.rotated{
+  transform: rotate(180deg);
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100%;
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 80px;
+  transition: left 0.3s;
+  z-index: 999;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 10px 20px;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.sidebar ul li a:hover {
+  background-color: #34495e;
+  display: block;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.main-header {
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+}
